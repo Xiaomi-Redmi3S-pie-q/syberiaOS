@@ -438,3 +438,72 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+#Wifi & Hotspot Fixes
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl.so \
+ $(LOCAL_PATH)/vendor/lib64/libkeymaster3device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster3device.so \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster3device.so \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.keymaster@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service.rc \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service.rc \
+ $(LOCAL_PATH)/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@2.0-impl.so \
+ $(LOCAL_PATH)/vendor/lib/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl.so \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@2.0-service.rc \
+ $(LOCAL_PATH)/vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so \
+ $(LOCAL_PATH)/vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so \
+ $(LOCAL_PATH)/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.graphics.allocator@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@2.0-service \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
+ $(LOCAL_PATH)/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@2.0-impl.so \
+ $(LOCAL_PATH)/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
+ $(LOCAL_PATH)/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
+ $(LOCAL_PATH)/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
+ $(LOCAL_PATH)/vendor/etc/seccomp_policy/configstore@1.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.0.policy \
+ $(LOCAL_PATH)/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
+ $(LOCAL_PATH)/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+ $(LOCAL_PATH)/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
+ $(LOCAL_PATH)/vendor/lib64/Wndroid.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.gnss@1.0.so \
+ $(LOCAL_PATH)/vendor/lib/Wndroid.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.gnss@1.0.so \
+ $(LOCAL_PATH)/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
+ $(LOCAL_PATH)/vendor/lib/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffectsconfig.so \
+ $(LOCAL_PATH)/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so \
+ $(LOCAL_PATH)/vendor/lib/Wndroid.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.frameworks.sensorservice@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/Wndroid.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.frameworks.sensorservice@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/Wndroid.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.radio@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/libWkeystorebinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libWkeystorebinder.so \
+ $(LOCAL_PATH)/vendor/lib/Wndroid.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.radio@1.0.so \
+ $(LOCAL_PATH)/vendor/lib/libWkeystorebinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libWkeystorebinder.so \
+ $(LOCAL_PATH)/vendor/lib/Wndroid.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/Wndroid.hardware.sensors@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/Wndroid.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/Wndroid.hardware.sensors@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/android.hardware.tetheroffload.control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.control@1.0.so \
+ $(LOCAL_PATH)/vendor/lib64/android.hardware.tetheroffload.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.tetheroffload.config@1.0.so \
+ $(LOCAL_PATH)/vendor/lib/android.hardware.tetheroffload.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.tetheroffload.config@1.0.so \
+ $(LOCAL_PATH)/vendor/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.so 
+
+# Camera fixes
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.common@1.0.so:system/lib/android.hardware.camera.common@1.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.device@1.0.so:system/lib/android.hardware.camera.device@1.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.device@3.2.so:system/lib/android.hardware.camera.device@3.2.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.device@3.3.so:system/lib/android.hardware.camera.device@3.3.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.device@3.4.so:system/lib/android.hardware.camera.device@3.4.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.camera.provider@2.4.so:system/lib/android.hardware.camera.provider@2.4.so \
+ $(LOCAL_PATH)/system/lib/libcamera_client.so:system/lib/libcamera_client.so \
+ $(LOCAL_PATH)/system/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
+ $(LOCAL_PATH)/system/lib/libcamera2ndk.so:system/lib/libcamera2ndk.so \
+ $(LOCAL_PATH)/system/lib/libcameraservice.so:system/lib/libcameraservice.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.common@1.0.so:system/lib64/android.hardware.camera.common@1.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.device@1.0.so:system/lib64/android.hardware.camera.device@1.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.device@3.2.so:system/lib64/android.hardware.camera.device@3.2.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.device@3.3.so:system/lib64/android.hardware.camera.device@3.3.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.device@3.4.so:system/lib64/android.hardware.camera.device@3.4.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.camera.provider@2.4.so:system/lib64/android.hardware.camera.provider@2.4.so \
+ $(LOCAL_PATH)/system/lib64/libkeystore_binder.so:system/lib64/libkeystore_binder.so \
+ $(LOCAL_PATH)/system/lib64/libkeystore-engine.so:system/lib64/libkeystore-engine.so
+
