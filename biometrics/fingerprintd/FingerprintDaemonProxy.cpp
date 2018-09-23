@@ -95,7 +95,7 @@ void FingerprintDaemonProxy::notifyKeystore(const uint8_t *auth_token, const siz
         sp < IBinder > binder = sm->getService(String16("android.security.keystore"));
         sp<security::IKeystoreService> service = interface_cast<security::IKeystoreService>(binder);
         if (service != NULL) {
-            std::vector<uint8_t> auth_token_vector(*auth_token, (*auth_token) + auth_token_length);
+            std::vector<uint8_t> auth_token_vector(auth_token, (auth_token) + auth_token_length);
                 int result = 0;
                 auto binder_result = service->addAuthToken(auth_token_vector, &result);
                 if (!binder_result.isOk() || !keystore::KeyStoreServiceReturnCode(result).isOk()) {

@@ -60,7 +60,8 @@ camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
 persist.camera.gyro.android=1 \
 persist.camera.is_type=1 \
 vendor.vidc.enc.narrow.searchrange=1 \
-persist.vendor.qti.telephony.vt_cam_interface=1
+persist.vendor.qti.telephony.vt_cam_interface=1 \
+persist.camera.HAL3.enabled=1
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -98,7 +99,8 @@ ro.qualcomm.cabl=0 \
 ro.qualcomm.svi=0 \
 ro.sf.lcd_density=320 \
 persist.debug.wfd.enable=1 \
-persist.hwc.enable_vds=1
+persist.hwc.enable_vds=1 \
+ro.boot.vendor.overlay.theme=com.google.android.theme.pixel 
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -127,7 +129,9 @@ media.aac_51_output_enabled=true \
 media.stagefright.audio.sink=280 \
 mm.enable.qcom_parser=17825791 \
 vendor.vidc.disable.split.mode=1 \
-vendor.vidc.enc.disable.pq=true \
+vendor.vidc.enc.disable.pq=true  \
+ro.opa.eligible_device=true \
+qemu.hw.mainkeys=1 \
 video.disable.ubwc=1
 
 # Perf
