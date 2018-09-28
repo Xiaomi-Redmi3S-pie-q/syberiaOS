@@ -26,8 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 #$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 #$(call inherit-product, vendor/havoc/common.mk)
-$(call inherit-product, vendor/nitrogen/products/common.mk)
-$(call inherit-product, vendor/nitrogen/config/qcom_utils.mk)
+$(call inherit-product, vendor/havoc/products/common.mk)
+$(call inherit-product, vendor/havoc/config/qcom_utils.mk)
 
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
