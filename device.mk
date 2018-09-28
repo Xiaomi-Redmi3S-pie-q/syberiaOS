@@ -564,3 +564,9 @@ PRODUCT_COPY_FILES += \
  $(LOCAL_PATH)/system/lib64/libaudiospdif.so:$system/lib64/libaudiospdif.so \
  $(LOCAL_PATH)/system/lib64/libaudioutils.so:$system/lib64/libaudioutils.so \
  $(LOCAL_PATH)/system/lib64/libbluetooth.so:$system/lib64/libbluetooth.so
+
+# Fix  Camera
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/vendor/lib/libshim_cameraservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_cameraservice.so \
+ $(LOCAL_PATH)/vendor/lib/libshim_mutexdestroy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_mutexdestroy.so \
+ $(LOCAL_PATH)/vendor/lib/libshim_pthreadts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_pthreadts.so 
