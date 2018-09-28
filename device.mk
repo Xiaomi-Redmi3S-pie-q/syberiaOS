@@ -506,3 +506,61 @@ PRODUCT_COPY_FILES += \
  $(LOCAL_PATH)/system/lib64/libkeystore_binder.so:system/lib64/libkeystore_binder.so \
  $(LOCAL_PATH)/system/lib64/libkeystore-engine.so:system/lib64/libkeystore-engine.so
 
+# Fix Mic & BT
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.common@2.0.so:$system/lib/android.hardware.audio.common@2.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.common@2.0-util.so:$system/lib/android.hardware.audio.common@2.0-util.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.common@4.0.so:$system/lib/android.hardware.audio.common@4.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.common@4.0-util.so:$system/lib/android.hardware.audio.common@4.0-util.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.common-util.so:$system/lib/android.hardware.audio.common-util.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.effect@2.0.so:$system/lib/android.hardware.audio.effect@2.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio.effect@4.0.so:$system/lib/android.hardware.audio.effect@4.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio@2.0.so:$system/lib/android.hardware.audio@2.0.so \
+ $(LOCAL_PATH)/system/lib/android.hardware.audio@4.0.so:$system/lib/android.hardware.audio@4.0.so \
+ $(LOCAL_PATH)/system/lib/libaaudio.so:$system/lib/libaaudio.so \
+ $(LOCAL_PATH)/system/lib/libaaudioservice.so:$system/lib/libaaudioservice.so \
+ $(LOCAL_PATH)/system/lib/libaudioclient.so:$system/lib/libaudioclient.so \
+ $(LOCAL_PATH)/system/lib/libaudioeffect_jni.so:$system/lib/libaudioeffect_jni.so \
+ $(LOCAL_PATH)/system/lib/libaudioflinger.so:$system/lib/libaudioflinger.so \
+ $(LOCAL_PATH)/system/lib/libaudiohal.so:$system/lib/libaudiohal.so \
+ $(LOCAL_PATH)/system/lib/libaudiohal@2.0.so:$system/lib/libaudiohal@2.0.so \
+ $(LOCAL_PATH)/system/lib/libaudiohal@4.0.so:$system/lib/libaudiohal@4.0.so \
+ $(LOCAL_PATH)/system/lib/libaudiohal_deathhandler.so:$system/lib/libaudiohal_deathhandler.so \
+ $(LOCAL_PATH)/system/lib/libaudiomanager.so:$system/lib/libaudiomanager.so \
+ $(LOCAL_PATH)/system/lib/libaudiopolicyenginedefault.so:$system/lib/libaudiopolicyenginedefault.so \
+ $(LOCAL_PATH)/system/lib/libaudiopolicymanager.so:$system/lib/libaudiopolicymanager.so \
+ $(LOCAL_PATH)/system/lib/libaudiopolicymanagerdefault.so:$system/lib/libaudiopolicymanagerdefault.so \
+ $(LOCAL_PATH)/system/lib/libaudiopolicyservice.so:$system/lib/libaudiopolicyservice.so \
+ $(LOCAL_PATH)/system/lib/libaudioprocessing.so:$system/lib/libaudioprocessing.so \
+ $(LOCAL_PATH)/system/lib/llibaudio-resampler.so:$system/lib/libaudio-resampler.so \
+ $(LOCAL_PATH)/system/lib/libaudioroute.so:$system/lib/libaudioroute.so \
+ $(LOCAL_PATH)/system/lib/libaudiospdif.so:$system/lib/libaudiospdif.so \
+ $(LOCAL_PATH)/system/lib/libaudioutils.so:$system/lib/libaudioutils.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.common@2.0.so:$system/lib64/android.hardware.audio.common@2.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.common@2.0-util.so:$system/lib64/android.hardware.audio.common@2.0-util.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.common@4.0.so:$system/lib64/android.hardware.audio.common@4.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.common@4.0-util.so:$system/lib64/android.hardware.audio.common@4.0-util.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.common-util.so:$system/lib64/android.hardware.audio.common-util.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.effect@2.0.so:$system/lib64/android.hardware.audio.effect@2.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio.effect@4.0.so:$system/lib64/android.hardware.audio.effect@4.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio@2.0.so:$system/lib64/android.hardware.audio@2.0.so \
+ $(LOCAL_PATH)/system/lib64/android.hardware.audio@4.0.so:$system/lib64/android.hardware.audio@4.0.so \
+ $(LOCAL_PATH)/system/lib64/libaaudio.so:$system/lib64/libaaudio.so \
+ $(LOCAL_PATH)/system/lib64/libaudioclient.so:$system/lib64/libaudioclient.so \
+ $(LOCAL_PATH)/system/lib64/libaudioeffect_jni.so:$system/lib64/libaudioeffect_jni.so \
+ $(LOCAL_PATH)/system/lib64/libaudioflinger.so:$system/lib64/libaudioflinger.so \
+ $(LOCAL_PATH)/system/lib64/libaudiohal.so:$system/lib64/libaudiohal.so \
+ $(LOCAL_PATH)/system/lib64/libaudiohal@2.0.so:$system/lib64/libaudiohal@2.0.so \
+ $(LOCAL_PATH)/system/lib64/libaudiohal@4.0.so:$system/lib64/libaudiohal@4.0.so \
+ $(LOCAL_PATH)/system/lib64/libaudiohal_deathhandler.so:$system/lib64/libaudiohal_deathhandler.so \
+ $(LOCAL_PATH)/system/lib64/libaudiomanager.so:$system/lib64/libaudiomanager.so \
+ $(LOCAL_PATH)/system/lib64/libaudiopolicyenginedefault.so:$system/lib64/libaudiopolicyenginedefault.so \
+ $(LOCAL_PATH)/system/lib64/libaudiopolicymanager.so:$system/lib64/libaudiopolicymanager.so \
+ $(LOCAL_PATH)/system/lib64/libaudiopolicymanagerdefault.so:$system/lib64/libaudiopolicymanagerdefault.so \
+ $(LOCAL_PATH)/system/lib64/libaudiopolicyservice.so:$system/lib64libaudiopolicyservice.so \
+ $(LOCAL_PATH)/system/lib64/libaudioprocessing.so:$system/lib64/libaudioprocessing.so \
+ $(LOCAL_PATH)/system/lib64/llibaudio-resampler.so:$system/lib64/libaudio-resampler.so \
+ $(LOCAL_PATH)/system/lib64/libaudioroute.so:$system/lib64/libaudioroute.so \
+ $(LOCAL_PATH)/system/lib64/libaudiospdif.so:$system/lib64/libaudiospdif.so \
+ $(LOCAL_PATH)/system/lib64/libaudioutils.so:$system/lib64/libaudioutils.so \
+ $(LOCAL_PATH)/system/lib64/libbluetooth.so:$system/lib64/libbluetooth.so
