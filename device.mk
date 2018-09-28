@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.0-service
 
+# Spectrum
+PRODUCT_PACKAGES += \
+   Spectrum
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \

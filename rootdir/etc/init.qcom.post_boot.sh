@@ -240,6 +240,8 @@ do
     echo 40 > $gpu_bimc_io_percent
 done
 
+setprop sys.post_boot.parsed 1
+
 # disable thermal core_control to update interactive gov and core_ctl settings
 echo 0 > /sys/module/msm_thermal/core_control/enabled
 
