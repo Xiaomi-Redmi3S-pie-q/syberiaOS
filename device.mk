@@ -367,9 +367,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(DEVICE_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
-# Snap
+# Google app
 PRODUCT_PACKAGES += \
-    Snap
+    MGC
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
@@ -574,3 +574,7 @@ PRODUCT_COPY_FILES += \
  $(LOCAL_PATH)/vendor/lib/libshim_cameraservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_cameraservice.so \
  $(LOCAL_PATH)/vendor/lib/libshim_mutexdestroy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_mutexdestroy.so \
  $(LOCAL_PATH)/vendor/lib/libshim_pthreadts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshim_pthreadts.so 
+
+# Add Spectrum
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/vendor/etc/init/spectrum.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/spectrum.rc 
