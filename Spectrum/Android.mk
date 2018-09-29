@@ -1,17 +1,5 @@
 LOCAL_PATH := $(call my-dir)
- include $(CLEAR_VARS)
-LOCAL_MODULE := Spectrum
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := prebuild/Spectrum.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_PATH := $(TARGET_OUT)/app
-include $(BUILD_PREBUILT) 
-
-
-LOCAL_PATH := $(call my-dir)
- include $(CLEAR_VARS)
+include $(CLEAR_VARS)
 LOCAL_MODULE := MGC
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := prebuild/gcam.apk
