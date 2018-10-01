@@ -15,5 +15,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo havoc_land-userdebug
+add_lunch_combo syberia_land-userdebug
 
