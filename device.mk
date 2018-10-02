@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 # Cameraservice shim
 PRODUCT_PACKAGES += \
     libshim_cameraservice
