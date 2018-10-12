@@ -83,6 +83,7 @@ dalvik.vm.heapmaxfree=8m
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=320 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
@@ -114,6 +115,10 @@ persist.qfp=false
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false
 
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=320
+
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.gps.qc_nlp_in_use=1 \
@@ -141,6 +146,9 @@ ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.am.reschedule_service=true \
 ro.vendor.qti.core_ctl_min_cpu=2 \
 ro.vendor.qti.core_ctl_max_cpu=4
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.sf.lcd_density=320
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
