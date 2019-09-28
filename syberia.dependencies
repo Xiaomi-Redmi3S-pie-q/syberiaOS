@@ -1,0 +1,27 @@
+ [
+  {
+    "repository" : "JacobDeepu/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "ten"
+  },
+  {
+    "repository" : "JacobDeepu/android_kernel_xiaomi_msm8937",
+    "target_path": "kernel/xiaomi/SY",
+    "branch": "JDreAm-10"
+  },
+  {
+   "repository" : "Xiaomi-Redmi3S-pie-q/android_hardware_qcom_audio",
+   "target_path": "hardware/qcom/audio-caf/msm8996",
+   "branch"     : "q-caf-msm8996"
+  },
+  {
+   "repository" : "Xiaomi-Redmi3S-pie-q/android_hardware_qcom_display",
+   "target_path": "hardware/qcom/display-caf/msm8996",
+   "branch"     : "q-caf-msm8996"
+  },
+  {
+   "repository" : "Xiaomi-Redmi3S-pie-q/android_hardware_qcom_media",
+   "target_path": "hardware/qcom/media-caf/msm8996",
+   "branch"     : "q-caf-msm8996"
+  }
+]
